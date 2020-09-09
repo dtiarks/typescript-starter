@@ -43,3 +43,4 @@ steps:
     containerRegistry: 'Dockerhub'
     repository: 'cambrion-test'
     command: 'push'
+    tags: 'nest-test'
