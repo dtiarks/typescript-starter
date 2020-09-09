@@ -17,5 +17,9 @@ describe('AppController', () => {
       const appController = app.get<AppController>(AppController);
       expect(appController.getHello()).toBe('Hello World!');
     });
+
+    it('fail', () => {      
+      expect(1).toBe(2);
+    });
   });
 });
