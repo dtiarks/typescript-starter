@@ -28,3 +28,11 @@ steps:
   inputs:
     testRunner: JUnit
     testResultsFiles: 'junit.xml'
+
+- task: Docker@2
+  displayName: 'Build Docker image'
+  inputs:
+    containerRegistry: 'Dockerhub'
+    repository: 'cambrion-test'
+    command: 'build'
+    Dockerfile: '**/Dockerfile'
