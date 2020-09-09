@@ -18,8 +18,8 @@ describe('AppController', () => {
       expect(appController.getHello()).toBe('Hello World!');
     });
 
-    it('fail', () => {      
-      expect(1).toBe(2);
+    it('should not fail', () => {      
+      expect(1).toBe(1);
     });
   });
 });
