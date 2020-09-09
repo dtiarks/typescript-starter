@@ -41,6 +41,6 @@ steps:
   displayName: 'Push Docker image'
   inputs:
     containerRegistry: 'Dockerhub'
-    repository: 'cambrion-test'
+    repository: 'dtiarks/cambrion-test'
     command: 'push'
     tags: 'nest-test'
