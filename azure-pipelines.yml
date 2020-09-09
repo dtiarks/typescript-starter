@@ -30,6 +30,10 @@ steps:
     testResultsFiles: 'junit.xml'
 
 - task: Docker@2
+  inputs:
+    containerRegistry: 'Dockerhub'
+    command: 'login'
+- task: Docker@2
   displayName: 'Build Docker image'
   inputs:
     containerRegistry: 'Dockerhub'
